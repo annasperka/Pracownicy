@@ -1,0 +1,10 @@
+- lokalizowanie wiersza w Gridzie wg zadanego parametru (a nie tylko filtrowanie)
+- dodanie pola PESEL + Regex
+- dodanie pola Dowód Osobisty + Regex
+- dodanie pola z zdjeciem/skanem + ewentualnie jakaœ miniatura
+- eksport danych do pliku
+- ³adowanie danych w drugim w¹tku
+- walidacja czy dane s¹ zapisane przed zamkniêciem formularza
+- regex na telefon
+- dodanie pola z email + regex
+- obs³uga enter do szukania

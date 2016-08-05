@@ -32,11 +32,7 @@ namespace KotrakMed
 
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            employessBindingSource.Filter = string.Format("Name like '%{0}%' or Surname like '%{0}%' or Adress like '%{0}%'", txtSearch.Text);
-        }
-
+      
         private void btnAddNew_Click(object sender, EventArgs e)
         {
             this.employessBindingSource.AddNew();
@@ -54,24 +50,12 @@ namespace KotrakMed
             this.employessBindingSource.RemoveCurrent();
         }
 
-        private void employessDataGridView_RowValidated(object sender, DataGridViewCellEventArgs e)
+        
+        private void btnFilter_Click(object sender, EventArgs e)
         {
-           
+            employessBindingSource.Filter = string.Format("Name like '%{0}%' or Surname like '%{0}%' or Adress like '%{0}%'", txtFilter.Text);
         }
 
-        private void employessBindingSource_CurrentItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employessBindingSource_DataMemberChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employessBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
