@@ -20,3 +20,4 @@ C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.csprojResolveAssemblyReference.ca
 C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Form1.resources
 C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Properties.Resources.resources
 C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.csproj.GenerateResource.Cache
+C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Messages.resources
