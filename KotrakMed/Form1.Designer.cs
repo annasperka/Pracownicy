@@ -35,42 +35,46 @@
             System.Windows.Forms.Label adressLabel;
             System.Windows.Forms.Label telephoneLabel;
             System.Windows.Forms.Label statusLabel;
+            System.Windows.Forms.Label emailLabel;
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.employessBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kotrakMedDataSet = new KotrakMed.KotrakMedDataSet();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.adressTextBox = new System.Windows.Forms.TextBox();
             this.telephoneTextBox = new System.Windows.Forms.TextBox();
             this.employessDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumnSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumnAdress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumnTelephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumnStatusValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.btnFilter = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
             this.statusTextBox = new System.Windows.Forms.TextBox();
-            this.employessTableAdapter = new KotrakMed.KotrakMedDataSetTableAdapters.EmployessTableAdapter();
-            this.tableAdapterManager = new KotrakMed.KotrakMedDataSetTableAdapters.TableAdapterManager();
             this.btnAccept = new System.Windows.Forms.Button();
             this.bntBlock = new System.Windows.Forms.Button();
             this.btnUnblock = new System.Windows.Forms.Button();
+            this.employessBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kotrakMedDataSet = new KotrakMed.KotrakMedDataSet();
+            this.dataGridViewTextBoxColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumnSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumnAdress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumnTelephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employessTableAdapter = new KotrakMed.KotrakMedDataSetTableAdapters.EmployessTableAdapter();
+            this.tableAdapterManager = new KotrakMed.KotrakMedDataSetTableAdapters.TableAdapterManager();
             idLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             adressLabel = new System.Windows.Forms.Label();
             telephoneLabel = new System.Windows.Forms.Label();
             statusLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.employessBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kotrakMedDataSet)).BeginInit();
+            emailLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.employessDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employessBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kotrakMedDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -133,25 +137,15 @@
             this.idTextBox.Location = new System.Drawing.Point(87, 21);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.Size = new System.Drawing.Size(62, 20);
             this.idTextBox.TabIndex = 2;
-            // 
-            // employessBindingSource
-            // 
-            this.employessBindingSource.DataMember = "Employess";
-            this.employessBindingSource.DataSource = this.kotrakMedDataSet;
-            // 
-            // kotrakMedDataSet
-            // 
-            this.kotrakMedDataSet.DataSetName = "KotrakMedDataSet";
-            this.kotrakMedDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "Name", true));
             this.nameTextBox.Location = new System.Drawing.Point(87, 44);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(203, 20);
             this.nameTextBox.TabIndex = 4;
             // 
             // surnameTextBox
@@ -159,7 +153,7 @@
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "Surname", true));
             this.surnameTextBox.Location = new System.Drawing.Point(87, 70);
             this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.surnameTextBox.Size = new System.Drawing.Size(203, 20);
             this.surnameTextBox.TabIndex = 6;
             // 
             // adressTextBox
@@ -167,7 +161,7 @@
             this.adressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "Adress", true));
             this.adressTextBox.Location = new System.Drawing.Point(87, 96);
             this.adressTextBox.Name = "adressTextBox";
-            this.adressTextBox.Size = new System.Drawing.Size(100, 20);
+            this.adressTextBox.Size = new System.Drawing.Size(203, 20);
             this.adressTextBox.TabIndex = 8;
             // 
             // telephoneTextBox
@@ -175,7 +169,7 @@
             this.telephoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "Telephone", true));
             this.telephoneTextBox.Location = new System.Drawing.Point(87, 122);
             this.telephoneTextBox.Name = "telephoneTextBox";
-            this.telephoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.telephoneTextBox.Size = new System.Drawing.Size(203, 20);
             this.telephoneTextBox.TabIndex = 10;
             // 
             // employessDataGridView
@@ -190,7 +184,8 @@
             this.dataGridViewTextBoxColumnSurname,
             this.dataGridViewTextBoxColumnAdress,
             this.dataGridViewTextBoxColumnTelephone,
-            this.dataGridViewTextBoxColumnStatusValue});
+            this.dataGridViewTextBoxColumnStatusValue,
+            this.Email});
             this.employessDataGridView.DataSource = this.employessBindingSource;
             this.employessDataGridView.Location = new System.Drawing.Point(611, 12);
             this.employessDataGridView.Name = "employessDataGridView";
@@ -198,47 +193,19 @@
             this.employessDataGridView.Size = new System.Drawing.Size(717, 475);
             this.employessDataGridView.TabIndex = 11;
             // 
-            // dataGridViewTextBoxColumnId
-            // 
-            this.dataGridViewTextBoxColumnId.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumnId.HeaderText = "Id";
-            this.dataGridViewTextBoxColumnId.Name = "dataGridViewTextBoxColumnId";
-            this.dataGridViewTextBoxColumnId.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumnName
-            // 
-            this.dataGridViewTextBoxColumnName.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumnName.HeaderText = "Name";
-            this.dataGridViewTextBoxColumnName.Name = "dataGridViewTextBoxColumnName";
-            this.dataGridViewTextBoxColumnName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumnSurname
-            // 
-            this.dataGridViewTextBoxColumnSurname.DataPropertyName = "Surname";
-            this.dataGridViewTextBoxColumnSurname.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumnSurname.Name = "dataGridViewTextBoxColumnSurname";
-            this.dataGridViewTextBoxColumnSurname.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumnAdress
-            // 
-            this.dataGridViewTextBoxColumnAdress.DataPropertyName = "Adress";
-            this.dataGridViewTextBoxColumnAdress.HeaderText = "Adress";
-            this.dataGridViewTextBoxColumnAdress.Name = "dataGridViewTextBoxColumnAdress";
-            this.dataGridViewTextBoxColumnAdress.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumnTelephone
-            // 
-            this.dataGridViewTextBoxColumnTelephone.DataPropertyName = "Telephone";
-            this.dataGridViewTextBoxColumnTelephone.HeaderText = "Telephone";
-            this.dataGridViewTextBoxColumnTelephone.Name = "dataGridViewTextBoxColumnTelephone";
-            this.dataGridViewTextBoxColumnTelephone.ReadOnly = true;
-            // 
             // dataGridViewTextBoxColumnStatusValue
             // 
             this.dataGridViewTextBoxColumnStatusValue.DataPropertyName = "StatusValue";
             this.dataGridViewTextBoxColumnStatusValue.HeaderText = "StatusValue";
             this.dataGridViewTextBoxColumnStatusValue.Name = "dataGridViewTextBoxColumnStatusValue";
             this.dataGridViewTextBoxColumnStatusValue.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // txtFilter
             // 
@@ -289,6 +256,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(emailLabel);
+            this.groupBox1.Controls.Add(this.textEmail);
             this.groupBox1.Controls.Add(statusLabel);
             this.groupBox1.Controls.Add(this.statusTextBox);
             this.groupBox1.Controls.Add(nameLabel);
@@ -308,14 +277,107 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data";
             // 
+            // textEmail
+            // 
+            this.textEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "Email", true));
+            this.textEmail.Location = new System.Drawing.Point(87, 174);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(203, 20);
+            this.textEmail.TabIndex = 13;
+            this.textEmail.Validating += new System.ComponentModel.CancelEventHandler(this.textEmail_Validating);
+            // 
             // statusTextBox
             // 
             this.statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employessBindingSource, "StatusValue", true));
             this.statusTextBox.Location = new System.Drawing.Point(87, 148);
             this.statusTextBox.Name = "statusTextBox";
             this.statusTextBox.ReadOnly = true;
-            this.statusTextBox.Size = new System.Drawing.Size(100, 20);
+            this.statusTextBox.Size = new System.Drawing.Size(203, 20);
             this.statusTextBox.TabIndex = 11;
+            // 
+            // btnAccept
+            // 
+            this.btnAccept.Location = new System.Drawing.Point(353, 413);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.TabIndex = 18;
+            this.btnAccept.Text = "Accept";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            // 
+            // bntBlock
+            // 
+            this.bntBlock.Location = new System.Drawing.Point(353, 444);
+            this.bntBlock.Name = "bntBlock";
+            this.bntBlock.Size = new System.Drawing.Size(75, 23);
+            this.bntBlock.TabIndex = 19;
+            this.bntBlock.Text = "Block";
+            this.bntBlock.UseVisualStyleBackColor = true;
+            this.bntBlock.Click += new System.EventHandler(this.bntBlock_Click);
+            // 
+            // btnUnblock
+            // 
+            this.btnUnblock.Location = new System.Drawing.Point(353, 478);
+            this.btnUnblock.Name = "btnUnblock";
+            this.btnUnblock.Size = new System.Drawing.Size(75, 23);
+            this.btnUnblock.TabIndex = 20;
+            this.btnUnblock.Text = "Unblock";
+            this.btnUnblock.UseVisualStyleBackColor = true;
+            this.btnUnblock.Click += new System.EventHandler(this.btnUnblock_Click);
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(22, 181);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(35, 13);
+            emailLabel.TabIndex = 14;
+            emailLabel.Text = "Email:";
+            // 
+            // employessBindingSource
+            // 
+            this.employessBindingSource.DataMember = "Employess";
+            this.employessBindingSource.DataSource = this.kotrakMedDataSet;
+            // 
+            // kotrakMedDataSet
+            // 
+            this.kotrakMedDataSet.DataSetName = "KotrakMedDataSet";
+            this.kotrakMedDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumnId
+            // 
+            this.dataGridViewTextBoxColumnId.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumnId.HeaderText = "Id";
+            this.dataGridViewTextBoxColumnId.Name = "dataGridViewTextBoxColumnId";
+            this.dataGridViewTextBoxColumnId.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumnName
+            // 
+            this.dataGridViewTextBoxColumnName.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumnName.HeaderText = "Name";
+            this.dataGridViewTextBoxColumnName.Name = "dataGridViewTextBoxColumnName";
+            this.dataGridViewTextBoxColumnName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumnSurname
+            // 
+            this.dataGridViewTextBoxColumnSurname.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumnSurname.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumnSurname.Name = "dataGridViewTextBoxColumnSurname";
+            this.dataGridViewTextBoxColumnSurname.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumnAdress
+            // 
+            this.dataGridViewTextBoxColumnAdress.DataPropertyName = "Adress";
+            this.dataGridViewTextBoxColumnAdress.HeaderText = "Adress";
+            this.dataGridViewTextBoxColumnAdress.Name = "dataGridViewTextBoxColumnAdress";
+            this.dataGridViewTextBoxColumnAdress.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumnTelephone
+            // 
+            this.dataGridViewTextBoxColumnTelephone.DataPropertyName = "Telephone";
+            this.dataGridViewTextBoxColumnTelephone.HeaderText = "Telephone";
+            this.dataGridViewTextBoxColumnTelephone.Name = "dataGridViewTextBoxColumnTelephone";
+            this.dataGridViewTextBoxColumnTelephone.ReadOnly = true;
             // 
             // employessTableAdapter
             // 
@@ -326,36 +388,6 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.EmployessTableAdapter = this.employessTableAdapter;
             this.tableAdapterManager.UpdateOrder = KotrakMed.KotrakMedDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // btnAccept
-            // 
-            this.btnAccept.Location = new System.Drawing.Point(226, 413);
-            this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(75, 23);
-            this.btnAccept.TabIndex = 18;
-            this.btnAccept.Text = "Accept";
-            this.btnAccept.UseVisualStyleBackColor = true;
-            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
-            // 
-            // bntBlock
-            // 
-            this.bntBlock.Location = new System.Drawing.Point(226, 444);
-            this.bntBlock.Name = "bntBlock";
-            this.bntBlock.Size = new System.Drawing.Size(75, 23);
-            this.bntBlock.TabIndex = 19;
-            this.bntBlock.Text = "Block";
-            this.bntBlock.UseVisualStyleBackColor = true;
-            this.bntBlock.Click += new System.EventHandler(this.bntBlock_Click);
-            // 
-            // btnUnblock
-            // 
-            this.btnUnblock.Location = new System.Drawing.Point(226, 478);
-            this.btnUnblock.Name = "btnUnblock";
-            this.btnUnblock.Size = new System.Drawing.Size(75, 23);
-            this.btnUnblock.TabIndex = 20;
-            this.btnUnblock.Text = "Unblock";
-            this.btnUnblock.UseVisualStyleBackColor = true;
-            this.btnUnblock.Click += new System.EventHandler(this.btnUnblock_Click);
             // 
             // Form1
             // 
@@ -375,11 +407,11 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.employessBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kotrakMedDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employessDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employessBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kotrakMedDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,6 +445,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumnStatusValue;
         private System.Windows.Forms.Button bntBlock;
         private System.Windows.Forms.Button btnUnblock;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }
 

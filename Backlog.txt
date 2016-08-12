@@ -11,6 +11,7 @@
 
 
 - program pozwala zarz¹dzaæ zarówno pracownikami jak i klientami (pracownicy i klienci wspó³dziel¹ wiêkszoœæ pól)
+
 - klient zaraz po utworzeniu posiada status ‘Nowy’
 - ‘Nowy’ klient mo¿e zostaæ zaakceptowany wtedy jego status zmienia siê na ‘Zaakceptowany’
 - program pozwala zmieniæ status ‘Zaakceptowanego’ klienta na ‘Zablokowany’

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace KotrakMed
 {
@@ -123,5 +124,17 @@ namespace KotrakMed
             }
 
         }
+
+       
+
+        private void textEmail_Validating(object sender, CancelEventArgs e)
+        {
+            e.Cancel = !Tools.CheckEmailFormat(((TextBox)sender).Text);
+
+        }
+      
+
+            
+        
     }
 }

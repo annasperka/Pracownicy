@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace KotrakMed
 {
@@ -30,6 +31,22 @@ namespace KotrakMed
         public void SetDisplayMember(DataGridViewComboBoxColumn column)
         {
             column.DisplayMember = "StatusValue";
+        }
+
+         public static bool CheckEmailFormat(string email)
+        {
+            if (email == String.Empty) return true;
+
+            Regex RX = new Regex("^[a-zA-Z0-9]{1,20}@[a-zA-Z0-9]{1,20}.[a-zA-Z]{2,3}$");
+
+            if (!RX.IsMatch(email))
+            {
+                return false;
+
+            }
+
+            return true;
+
         }
 
         public void SetDisplayMember(ComboBox combo)
