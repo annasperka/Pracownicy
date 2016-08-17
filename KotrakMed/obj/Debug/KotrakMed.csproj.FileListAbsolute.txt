@@ -9,15 +9,3 @@ C:\VS\KotrakMed\KotrakMed\bin\Debug\KotrakMed.exe
 C:\VS\KotrakMed\KotrakMed\bin\Debug\KotrakMed.pdb
 C:\VS\KotrakMed\KotrakMed\obj\Debug\KotrakMed.exe
 C:\VS\KotrakMed\KotrakMed\obj\Debug\KotrakMed.pdb
-C:\VS\Pracownicy\KotrakMed\bin\Debug\KotrakMed.exe.config
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.exe
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.pdb
-C:\VS\Pracownicy\KotrakMed\bin\Debug\KotrakMed.mdf
-C:\VS\Pracownicy\KotrakMed\bin\Debug\KotrakMed_log.ldf
-C:\VS\Pracownicy\KotrakMed\bin\Debug\KotrakMed.exe
-C:\VS\Pracownicy\KotrakMed\bin\Debug\KotrakMed.pdb
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.csprojResolveAssemblyReference.cache
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Form1.resources
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Properties.Resources.resources
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.csproj.GenerateResource.Cache
-C:\VS\Pracownicy\KotrakMed\obj\Debug\KotrakMed.Messages.resources

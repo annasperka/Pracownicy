@@ -1,8 +1,9 @@
-C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed.exe.config
 C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed.mdf
 C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed_log.ldf
+C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed.exe.config
 C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed.exe
 C:\VS\Pracownicy\KotrakMed\bin\Release\KotrakMed.pdb
+C:\VS\Pracownicy\KotrakMed\obj\Release\KotrakMed.csprojResolveAssemblyReference.cache
 C:\VS\Pracownicy\KotrakMed\obj\Release\KotrakMed.Form1.resources
 C:\VS\Pracownicy\KotrakMed\obj\Release\KotrakMed.Properties.Resources.resources
 C:\VS\Pracownicy\KotrakMed\obj\Release\KotrakMed.Messages.resources

@@ -1,3 +1,4 @@
+To do:
 - lokalizowanie wiersza w Gridzie wg zadanego parametru (a nie tylko filtrowanie)
 - dodanie pola PESEL + Regex
 - dodanie pola Dowód Osobisty + Regex
@@ -6,13 +7,12 @@
 - ³adowanie danych w drugim w¹tku
 - walidacja czy dane s¹ zapisane przed zamkniêciem formularza
 - regex na telefon
-- dodanie pola z email + regex
 - obs³uga enter do szukania
-
-
 - program pozwala zarz¹dzaæ zarówno pracownikami jak i klientami (pracownicy i klienci wspó³dziel¹ wiêkszoœæ pól)
 
+Ready:
 - klient zaraz po utworzeniu posiada status ‘Nowy’
 - ‘Nowy’ klient mo¿e zostaæ zaakceptowany wtedy jego status zmienia siê na ‘Zaakceptowany’
 - program pozwala zmieniæ status ‘Zaakceptowanego’ klienta na ‘Zablokowany’
 - zablokowany klient mo¿e zostaæ odblokowany wtedy ponownie przyjmuje status ‘Zaakceptowany’
+- dodanie pola z email + regex
